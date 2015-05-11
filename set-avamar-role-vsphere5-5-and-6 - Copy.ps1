@@ -46,6 +46,7 @@ Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Global" -Name "
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Global" -Name "Licenses")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Global" -Name "Log event")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Global" -Name "Manage custom attributes")
+Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Global" -Name "Set custom attribute")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Global" -Name "Settings")
 
 # Entity or group privileges 'Network'
@@ -74,6 +75,7 @@ Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Configuration" 
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Configuration" -Name "Advanced")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Configuration" -Name "Change CPU count")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Configuration" -Name "Change resource")
+Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Configuration" -Name "Configure managedBy")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Configuration" -Name "Disk change tracking")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Configuration" -Name "Disk Lease")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Configuration" -Name "Extend virtual disk")
@@ -104,6 +106,7 @@ Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Interaction" -N
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Interaction" -Name "VMware Tools install")
 
 # Entity or group privileges 'Virtual machine: Inventory'
+Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Inventory" -Name "Create from existing")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Inventory" -Name "Create new")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Inventory" -Name "Register")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Inventory" -Name "Remove")
@@ -113,12 +116,13 @@ Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Inventory" -Nam
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Provisioning" -Name "Allow disk access")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Provisioning" -Name "Allow read-only disk access")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Provisioning" -Name "Allow virtual machine download")
+Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Provisioning" -Name "Clone virtual machine")
 Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Provisioning" -Name "Mark as template")
 
 # Entity or group privileges 'Virtual machine: Snapshot Management'
-Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Snapshot Management" -Name "Create snapshot")
-Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Snapshot Management" -Name "Remove snapshot")
-Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Snapshot Management" -Name "Revert to snapshot")
+Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Snapshot management" -Name "Create snapshot")
+Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Snapshot management" -Name "Remove snapshot")
+Set-VIRole -Role "avamar" -AddPrivilege (Get-VIPrivilege -Group "Snapshot management" -Name "Revert to snapshot")
 
 
 
